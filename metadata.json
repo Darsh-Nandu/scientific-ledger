@@ -1,0 +1,6 @@
+{
+  "name": "Editorial Papers",
+  "description": "An editorial and playful research paper discoverer and summarizer powered by Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editorial Papers — Scientific Summaries</title>
+    <script>
+      // Prevent expected dev-environment WebSocket/HMR disconnect errors from bubbling into scary browser console warning alerts.
+      (function() {
+        var isWebSocketNoise = function(text) {
+          if (!text) return false;
+          var lower = String(text).toLowerCase();
+          return lower.indexOf("websocket") !== -1 || lower.indexOf("web-socket") !== -1 || lower.indexOf("vite") !== -1 || lower.indexOf("hmr") !== -1;
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var reason = event.reason;
+          var reasonMsg = reason ? (reason.message || String(reason)) : "";
+          if (isWebSocketNoise(reasonMsg)) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          var msg = event.message || "";
+          if (isWebSocketNoise(msg)) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

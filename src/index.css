@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Georgia, serif;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@media (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active a,
+  .custom-cursor-active button,
+  .custom-cursor-active div,
+  .custom-cursor-active input,
+  .custom-cursor-active select,
+  .custom-cursor-active label,
+  .custom-cursor-active h1,
+  .custom-cursor-active h2,
+  .custom-cursor-active h3,
+  .custom-cursor-active p,
+  .custom-cursor-active svg,
+  .custom-cursor-active img,
+  .custom-cursor-active span {
+    cursor: none !important;
+  }
+}
