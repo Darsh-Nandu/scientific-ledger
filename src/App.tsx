@@ -540,9 +540,9 @@ export default function App() {
       {/* Editorial top banner / ticker */}
       <div className="bg-black text-stone-100 text-[11px] font-mono py-2 px-4 uppercase tracking-[0.2em] font-semibold flex items-center justify-between border-b-2 border-black z-40 overflow-hidden select-none">
         <div className="flex items-center gap-2 mr-4 shrink-0">
-          <span className="flex items-center gap-1.5 px-2 py-0.5 border border-dashed border-[#FFF275] text-[#FFF275] rounded-xs font-black animate-pulse">
+          <span className="flex items-center gap-1.5 px-2 py-0.5 border border-dashed border-[#FFF275] text-[#FFF275] rounded-xs font-black">
             <Sparkles className="w-3.5 h-3.5 fill-[#FFF275]" />
-            <span>Google AI Studio Website</span>
+            <span>The Independent Ledger</span>
           </span>
           <span className="text-stone-700 font-normal hidden md:inline ml-2">|</span>
         </div>
@@ -1128,7 +1128,7 @@ export default function App() {
             <p className={`font-sans text-xs max-w-sm font-medium leading-normal ${
               isNightMode ? "text-stone-400" : "text-stone-600"
             }`}>
-              An independent library interface translating computational breakthroughs into human prose. Powered by Gemini & ArXiv OpenAPI.
+              An independent library interface translating computational breakthroughs into human prose. Powered by ArXiv OpenAPI.
             </p>
           </div>
           <div className="flex flex-col md:items-end justify-center gap-3">
